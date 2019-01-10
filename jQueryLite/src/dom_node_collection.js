@@ -78,9 +78,9 @@ class DOMNodeCollection {
   }
 
    children() {
-     let kids = new DOMNodeCollection();
+     let kids = new DOMNodeCollection([]);
      for (let i = 0; i < this.HTMLElements.length; i++) {
-       kids.HTMLElements.concat(this[i].HTMLElements.children);
+       kids.HTMLElements = kids.HTMLElements.concat(Array.from(this.HTMLElements[i].children));
      }
      return kids;
   }
