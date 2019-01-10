@@ -1,0 +1,19 @@
+body { font-family: Raleway, Arial, Helventica, sans-serif;}
+.album {
+  display: flex;
+}
+.cover-art {
+ 
+}
+.album-details {
+  
+  margin-left: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1 {font-weight: bold;}
